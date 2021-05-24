@@ -1,6 +1,6 @@
 {
     "name": "Two Factor Telnyx",
-    "description": "Twofactor authentication app using Telnyx&#39;s &quot;Verify&quot; API",
+    "description": "SMS two-factor authentication for Nextcloud via Telnyx's Verify API.",
     "type": "project",
     "license": "agpl",
     "authors": [
