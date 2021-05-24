@@ -3,21 +3,21 @@
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>twofactor_telnyx</id>
     <name>Two Factor Telnyx</name>
-    <summary>Twofactor authentication app using Telnyx&#39;s &quot;Verify&quot; API</summary>
+    <summary>Two factor authentication app using Telnyx&#39;s &quot;Verify&quot; API</summary>
     <description><![CDATA[Twofactor authentication app using Telnyx&#39;s &quot;Verify&quot; API]]></description>
     <version>0.0.1</version>
     <licence>agpl</licence>
     <author mail="developer@spryservers.net" homepage="https://www.spryservers.net">Spry Servers</author>
     <namespace>TwoFactorTelnyx</namespace>
     <category>security</category>
+    <website>https://github.com/SpryServers/twofactor_telnyx_nc</website>
     <bugs>https://github.com/SpryServers/twofactor_telnyx_nc/issues</bugs>
+    <repository type="git">https://git.spryservers.net/sprycloud/twofactor_telnyx_nc.git</repository>
     <dependencies>
-        <nextcloud min-version="20" max-version="21"/>
-    </dependencies>
-    <navigations>
-        <navigation>
-            <name>Two Factor Telnyx</name>
-            <route>twofactor_telnyx.page.index</route>
-        </navigation>
-    </navigations>
+  		<php min-version="7.2" max-version="8.0" />
+  		<nextcloud min-version="19" max-version="22" />
+  	</dependencies>
+    <two-factor-providers>
+  		<provider>OCA\TwoFactorTelnyx\Provider\TelnyxVerify</provider>
+  	</two-factor-providers>
 </info>

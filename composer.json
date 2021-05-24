@@ -2,7 +2,7 @@
     "name": "Two Factor Telnyx",
     "description": "Twofactor authentication app using Telnyx&#39;s &quot;Verify&quot; API",
     "type": "project",
-    "license": "GPLv3",
+    "license": "agpl",
     "authors": [
         {
             "name": "Spry Servers"
@@ -10,6 +10,6 @@
     ],
     "require": {},
     "require-dev": {
-        "phpunit/phpunit": "^5.4"
+        "phpunit/phpunit": "^7.2"
     }
 }
